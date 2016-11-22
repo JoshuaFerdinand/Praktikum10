@@ -16,7 +16,7 @@ void loop()
   Serial.println(sqrt(x*x+y*y));
   Serial.println("~~~~~~~~~~~");
   Serial.println("Angle is : ");
-  Serial.println(atan(y/x)*(180/3.14));
+  Serial.println(asin(y/(sqrt(x*x+y*y)))*(180/3.14));
   Serial.println("~~~~~~~~~~~\n\n");
 }
 
